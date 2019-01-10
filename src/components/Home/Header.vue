@@ -5,9 +5,11 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right arrow-icon">{{this.city}}
+    <router-link to='/city'>
+    <div class="header-right arrow-icon">{{this.city[0].name}}
       <span class="iconfont">&#xe64a; </span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -15,7 +17,7 @@
 export default {
   name: "HomeHerader",
   props:{
-    city:String
+    city:Array
   }
 };
 </script>

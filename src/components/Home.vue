@@ -51,7 +51,7 @@ export default {
       res = res.data
       if(res.ret && res.data){
         const data = res.data
-        this.city = data.city
+        this.city = data.hotCities
       }
     }
   },
