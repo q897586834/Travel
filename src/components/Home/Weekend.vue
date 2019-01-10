@@ -22,6 +22,9 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props:{
+      list:Array
+  },
   data(){
       return{
           list:[{
