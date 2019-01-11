@@ -6,7 +6,7 @@
       输入城市/景点/游玩主题
     </div>
     <router-link to='/city'>
-    <div class="header-right arrow-icon">{{this.city[0].name}}
+    <div class="header-right arrow-icon">北京
       <span class="iconfont">&#xe64a; </span>
     </div>
     </router-link>
@@ -16,9 +16,6 @@
 <script>
 export default {
   name: "HomeHerader",
-  props:{
-    city:Array
-  }
 };
 </script>
 
@@ -26,7 +23,7 @@ export default {
 @import '~styles/varibles.styl'
 .header
   display: flex
-  line-height: 0.86rem
+  line-height: $headerHeight
   background: $bgColor
   color: #fff
   .header-left

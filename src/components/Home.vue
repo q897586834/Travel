@@ -1,10 +1,10 @@
 <template>
   <div>
-    <home-header :city="city"></home-header>
-    <home-swiper :list="swiperList"></home-swiper>
-    <home-icons :list="iconList"></home-icons>
-    <home-recommend :list="recommendList"></home-recommend>
-    <home-weekend :list="weekendList"></home-weekend>
+    <home-header></home-header>
+    <home-swiper :swiperlist="swiperList"></home-swiper>
+    <home-icons :iconlist="iconList"></home-icons>
+    <home-recommend :recommendlist="recommendList"></home-recommend>
+    <home-weekend :weekendlist="weekendList"></home-weekend>
   </div>
 </template>
 
@@ -47,13 +47,13 @@ export default {
       }
       console.log(res)
     },
-    getCityInfo(res){
-      res = res.data
-      if(res.ret && res.data){
-        const data = res.data
-        this.city = data.hotCities
-      }
-    }
+    // getCityInfo(res){
+    //   res = res.data
+    //   if(res.ret && res.data){
+    //     const data = res.data
+    //     this.city = data.hotCities
+    //   }
+    // }
   },
   mounted (){
     this.getHomeInfo()

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <swiper :options="swiperOption">
       <swiper-slide
-        v-for="(item,index) in list"
+        v-for="(item,index) in swiperlist"
         :key="index"
       >
         <img
@@ -23,7 +23,7 @@
 export default {
   name: "HomeSwiper",
   props: {
-    list: Array
+    swiperlist: Array
   },
   data() {
     return {

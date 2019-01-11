@@ -6,7 +6,7 @@
     <ul>
       <li
         class="item"
-        v-for="item in list"
+        v-for="item in recommendlist"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -29,42 +29,9 @@
 export default {
   name: "HomeRecommend",
   props:{
-      list:Array
+      recommendlist:Array
   },
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "0001",
-          title: "杭州云曼温泉",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg",
-          desc: "饱经沧桑的地方诉述着这座城的段段衷肠"
-        },
-        {
-          id: "0002",
-          title: "杭州云曼温泉",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg",
-          desc: "饱经沧桑的地方诉述着这座城的段段衷肠"
-        },
-        {
-          id: "0003",
-          title: "杭州云曼温泉",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg",
-          desc: "饱经沧桑的地方诉述着这座城的段段衷肠"
-        },
-        {
-          id: "0004",
-          title: "杭州云曼温泉",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/1810/cc/cc47164357acbeb5a3.water.jpg_200x200_151f0405.jpg",
-          desc: "饱经沧桑的地方诉述着这座城的段段衷肠"
-        },
-      ]
-    };
-  }
+ 
 };
 </script>
 
