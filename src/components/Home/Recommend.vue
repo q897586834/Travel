@@ -4,11 +4,14 @@
       热销推荐
     </div>
     <ul>
-      <li
+      <router-link
+        tag="li"
+        :to="'/detail/'+item.id"
         class="item"
         v-for="item in recommendlist"
         :key="item.id"
       >
+
         <div class="item-img-wrapper">
           <img
             class="item-img"
@@ -20,7 +23,7 @@
           <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -28,10 +31,9 @@
 <script>
 export default {
   name: "HomeRecommend",
-  props:{
-      recommendlist:Array
-  },
- 
+  props: {
+    recommendlist: Array
+  }
 };
 </script>
 
