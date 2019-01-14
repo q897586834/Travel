@@ -22,7 +22,6 @@ export default {
   },
   data() {
     return {
-      city:'',
       swiperList:[],
       iconList:[],
       recommendList:[],
@@ -33,8 +32,6 @@ export default {
     getHomeInfo (){
       axios.get('/api/index.json')
       .then(this.getIndexInfo)
-      axios.get('/api/city.json')
-      .then(this.getCityInfo)
     },
     getIndexInfo(res){
       res = res.data
