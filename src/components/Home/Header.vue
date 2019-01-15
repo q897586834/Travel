@@ -6,7 +6,7 @@
       输入城市/景点/游玩主题
     </div>
     <router-link to='/city'>
-    <div class="header-right arrow-icon">{{this.$store.state.city}}
+    <div class="header-right arrow-icon">{{this.city}}
       <span class="iconfont">&#xe64a; </span>
     </div>
     </router-link>
@@ -14,9 +14,14 @@
 </template>
 
 <script>
+import {mapState, mapGetters} from 'vuex'
 export default {
   name: "HomeHerader",
-};
+  computed: {
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
