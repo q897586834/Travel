@@ -32,7 +32,7 @@ export default {
     return {
       cities: {},
       hotCities: [],
-      letter:''
+      letter: ''
     }
   },
   methods: {
@@ -48,8 +48,8 @@ export default {
         this.hotCities = data.hotCities
       }
     },
-    handleLetterChange(letter){
-        this.letter=letter
+    handleLetterChange (letter) {
+      this.letter = letter
     }
   },
   mounted () {

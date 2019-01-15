@@ -49,7 +49,7 @@
 
 <script>
 import Bscroll from "better-scroll";
-import {mapState,mapMutations} from 'vuex'
+import { mapState, mapMutations } from "vuex";
 export default {
   name: "CityList",
   props: {
@@ -59,23 +59,15 @@ export default {
   },
   computed: {
     ...mapState({
-      currentCity:'city'
+      currentCity: "city"
     })
   },
   methods: {
-    // handleLetterClick(e) {
-    //   this.$emit("change", e.target.innerText);
-    // },
     handleCityClick(city) {
-      this.changeCity(city)
-      this.$router.push('/')
+      this.changeCity(city);
+      this.$router.push("/");
     },
-    ...mapMutations(['changeCity'])
-  },
-  data() {
-    return {
-      touchStatus: false
-    };
+    ...mapMutations(["changeCity"])
   },
   watch: {
     letter() {
