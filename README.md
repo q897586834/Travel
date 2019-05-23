@@ -1,13 +1,7 @@
 Vue2.5开发去哪儿网App
 技术栈和主要框架
 
-package Vue 全家桶：vue2.5 + vuex + vue-router + webpack
-
-pushpin ES6
-
-satellite 网络请求：axios
-
-项目运行
+Vue 全家桶：vue2.5 + vuex + vue-router + webpack
 
 # 克隆到本地
 git clone 
